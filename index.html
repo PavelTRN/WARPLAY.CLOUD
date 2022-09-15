@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html land="ru">
+
+<head>
+    <title>WARPLAY</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/zoomslider.css">
+    <link rel="stylesheet" href="css/all.min.css" <script src="js/modernizr-2.6.2.min.js">
+    </script>
+</head>
+
+<body>
+    <!-- Svg-sprite -->
+    <svg style="display: none;">
+        <symbol id="logo" viewBox="0 0 189 28">
+            <g>
+                <path
+                    d="M54.32 23.1299L56.816 19.3859L59.288 23.1299C59.504 23.4419 59.84 23.6099 60.224 23.6099H62.432V6.80992H59.624V19.4099L58.208 17.2739L57.728 16.5779C57.296 15.9059 56.312 15.9059 55.88 16.5779L55.4 17.2739L53.984 19.4099V6.80992H51.2V23.6099H53.384C53.768 23.6099 54.104 23.4419 54.32 23.1299ZM72.3526 6.85792C72.2806 6.83392 72.1846 6.80992 72.1126 6.80992H65.9446C65.3206 6.80992 64.8406 7.31392 64.8406 7.93792V23.6099H67.6246V19.5299C68.6566 19.3139 69.5926 18.9059 70.4326 18.3539V23.6099H73.2406V7.93792C73.2406 7.40992 72.8566 6.97792 72.3526 6.85792ZM67.6246 16.6259V9.61792H70.4326V14.4179C69.7846 15.4499 68.8006 16.2419 67.6246 16.6259ZM83.1573 6.85792C83.0853 6.83392 82.9893 6.80992 82.9173 6.80992H75.6453V23.6339H78.4293V19.5299C79.2933 19.3619 80.0853 19.0259 80.8293 18.6179L81.2373 19.3859V23.6339H84.0453V19.3859L82.7733 17.0099C83.2773 16.4339 83.7093 15.8099 84.0453 15.1379V7.93792C84.0213 7.40992 83.6613 6.97792 83.1573 6.85792ZM78.4293 9.61792H81.2373V14.4179C80.5893 15.4499 79.6053 16.2419 78.4293 16.6259V9.61792ZM93.962 6.85792C93.89 6.83392 93.794 6.80992 93.722 6.80992H87.554C86.93 6.80992 86.45 7.31392 86.45 7.93792V23.6099H89.234V19.5299C90.266 19.3139 91.202 18.9059 92.042 18.3539C93.242 17.5619 94.202 16.4339 94.826 15.1379V7.93792C94.826 7.40992 94.466 6.97792 93.962 6.85792ZM89.234 16.6259V9.61792H92.042V14.4179C91.394 15.4499 90.41 16.2419 89.234 16.6259ZM100.039 6.80992H97.2547V22.5059C97.2547 23.1299 97.7347 23.6099 98.3587 23.6099H105.631V20.8259H100.039V6.80992ZM115.571 6.85792C115.499 6.83392 115.403 6.80992 115.331 6.80992H109.163C108.539 6.80992 108.059 7.31392 108.059 7.93792V23.6099H110.843V19.5299C111.875 19.3139 112.811 18.9059 113.651 18.3539V23.6099H116.459V7.93792C116.459 7.40992 116.075 6.97792 115.571 6.85792ZM110.843 16.6259V9.61792H113.651V14.4179C113.003 15.4499 112.019 16.2419 110.843 16.6259ZM126.064 6.80992L123.256 12.4259L120.448 6.80992H117.664L121.864 15.2099V23.6099H124.648V15.2099L128.848 6.80992H126.064ZM130.067 20.8259V23.6099H131.747C132.347 23.6099 132.851 23.1299 132.851 22.5059V20.8259H130.067ZM140.862 20.8259H138.054V9.61792H140.862V12.4739C142.062 12.0419 143.07 11.1539 143.646 10.0259V7.93792C143.646 7.31392 143.166 6.80992 142.542 6.80992H135.27V23.6099H142.542C143.166 23.6099 143.646 23.1299 143.646 22.5059V15.4019H140.862V20.8259ZM148.859 6.80992H146.075V22.5059C146.075 23.1299 146.555 23.6099 147.179 23.6099H154.451V20.8259H148.859V6.80992ZM156.88 7.93792V22.5059C156.88 23.1299 157.36 23.6099 157.984 23.6099H164.152C164.776 23.6099 165.256 23.1299 165.256 22.5059V7.93792C165.256 7.31392 164.776 6.80992 164.152 6.80992H157.984C157.36 6.80992 156.88 7.31392 156.88 7.93792ZM162.472 20.8259H159.664V9.61792H162.472V20.8259ZM173.276 6.80992V20.8259H170.468V6.80992H167.684V22.5059C167.684 23.1299 168.164 23.6099 168.788 23.6099H174.956C175.58 23.6099 176.06 23.1299 176.06 22.5059V6.80992H173.276ZM178.489 6.80992V23.6099H185.761C186.385 23.6099 186.865 23.1299 186.865 22.5059V7.93792C186.865 7.31392 186.385 6.80992 185.761 6.80992H178.489ZM184.081 20.8259H181.273V9.61792H184.081V20.8259Z"
+                    class="svg-elem-1"></path>
+                <path
+                    d="M19.2632 16.0881H13.7406C13.6799 16.0881 13.6248 16.1265 13.6028 16.1813L8.41082 27.2543C8.37224 27.353 8.44389 27.4572 8.54861 27.4517H24.4441C24.5488 27.4517 24.615 27.3421 24.5819 27.2488L19.39 16.1758C19.3734 16.1265 19.3183 16.0881 19.2632 16.0881Z"
+                    class="svg-elem-2"></path>
+                <path
+                    d="M8.48244 24.2983L12.9854 14.7664C12.9964 14.7389 13.002 14.706 12.9909 14.6731L6.47621 0.770181C6.43212 0.605649 6.18961 0.627587 6.18961 0.803087L8.20686 24.2434C8.19583 24.397 8.42181 24.4463 8.48244 24.2983Z"
+                    class="svg-elem-3"></path>
+                <path
+                    d="M0.407926 9.26549L4.65738 0.0626718C4.74556 -0.057985 4.92745 0.00782761 4.92194 0.155906L7.15965 25.6255C7.15414 25.779 6.93919 25.8229 6.87856 25.6803L0.159903 11.3221C-0.121189 10.6421 -0.0274918 9.86329 0.407926 9.26549Z"
+                    class="svg-elem-4"></path>
+                <path
+                    d="M24.7968 24.2434L26.8141 0.80305C26.8141 0.633034 26.5716 0.605612 26.5275 0.770144L20.0128 14.6731C20.0017 14.706 20.0072 14.7389 20.0183 14.7663L24.5213 24.2982C24.5819 24.4463 24.8079 24.3969 24.7968 24.2434Z"
+                    class="svg-elem-5"></path>
+                <path
+                    d="M32.8383 11.3221L26.1196 25.6803C26.059 25.8284 25.844 25.7845 25.8385 25.6254L28.0762 0.155891C28.0707 0.00781251 28.2526 -0.0525157 28.3408 0.0626567L32.5958 9.26548C33.0312 9.86328 33.1194 10.6421 32.8383 11.3221Z"
+                    class="svg-elem-6"></path>
+            </g>
+        </symbol>
+        <symbol id="mailRu" viewBox="0 0 25 25">
+            <path
+                d="M0 12.48C0 5.58749 5.58749 0 12.48 0C19.3725 0 24.96 5.58749 24.96 12.48C24.96 19.3725 19.3725 24.96 12.48 24.96C5.58749 24.96 0 19.3725 0 12.48Z"
+                fill="#005FF9" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5.19995 12.4593C5.19995 8.45648 8.46568 5.19995 12.4798 5.19995C16.494 5.19995 19.7598 8.45648 19.7598 12.4593C19.7598 13.0264 19.7125 13.4854 19.6064 13.9462L19.6049 13.9538C19.6046 13.9552 19.552 14.1676 19.5229 14.2603C19.343 14.8341 19.0173 15.312 18.5808 15.6423C18.1576 15.9627 17.6329 16.1392 17.1033 16.1392C17.0379 16.1392 16.972 16.1366 16.9075 16.1314C16.1554 16.0712 15.4942 15.6766 15.0887 15.0473C14.3913 15.7466 13.4661 16.1313 12.4798 16.1313C10.4494 16.1313 8.79753 14.484 8.79753 12.4593C8.79753 10.4346 10.4494 8.7874 12.4798 8.7874C14.5103 8.7874 16.1622 10.4346 16.1622 12.4593V13.643C16.1652 14.3336 16.63 14.6159 17.027 14.6479C17.4221 14.6783 17.9478 14.4488 18.131 13.6999C18.2213 13.2892 18.2672 12.8717 18.2672 12.4593C18.2672 9.27712 15.671 6.68826 12.4798 6.68826C9.28868 6.68826 6.69251 9.27712 6.69251 12.4593C6.69251 15.6415 9.28868 18.2304 12.4798 18.2304C13.5907 18.2304 14.671 17.914 15.6041 17.3155L15.6208 17.3047L16.6015 18.4417L16.5805 18.4561C15.3685 19.2821 13.9505 19.7187 12.4798 19.7187C8.46568 19.7187 5.19995 16.4622 5.19995 12.4593ZM12.4798 14.6429C13.6873 14.6429 14.6696 13.6634 14.6696 12.4593C14.6696 11.2553 13.6873 10.2757 12.4798 10.2757C11.2724 10.2757 10.2901 11.2553 10.2901 12.4593C10.2901 13.6634 11.2724 14.6429 12.4798 14.6429Z"
+                fill="#FF9E00" />
+        </symbol>
+        <symbol id="vk" viewBox="0 0 26 25">
+            <path
+                d="M0.959961 12.48C0.959961 5.58749 6.54745 0 13.44 0C20.3325 0 25.92 5.58749 25.92 12.48C25.92 19.3725 20.3325 24.96 13.44 24.96C6.54745 24.96 0.959961 19.3725 0.959961 12.48Z"
+                fill="#4C6C91" />
+            <path
+                d="M14.0928 16.5755C14.0928 16.5755 14.333 16.5493 14.4561 16.4196C14.5687 16.3007 14.5648 16.0764 14.5648 16.0764C14.5648 16.0764 14.5498 15.0289 15.0453 14.8742C15.5336 14.7221 16.1606 15.8872 16.8261 16.3352C17.3287 16.674 17.7102 16.5998 17.7102 16.5998L19.4884 16.5755C19.4884 16.5755 20.4181 16.5193 19.9773 15.8016C19.9409 15.7428 19.7202 15.2705 18.6556 14.3003C17.5403 13.2848 17.6901 13.449 19.0326 11.6921C19.8504 10.6222 20.1772 9.96908 20.075 9.68979C19.978 9.42264 19.3764 9.49358 19.3764 9.49358L17.3749 9.50573C17.3749 9.50573 17.2265 9.48591 17.1164 9.55046C17.009 9.61373 16.9393 9.76137 16.9393 9.76137C16.9393 9.76137 16.6229 10.589 16.2004 11.2933C15.309 12.7786 14.9529 12.8572 14.807 12.7652C14.4678 12.5498 14.5524 11.9011 14.5524 11.4403C14.5524 10.0004 14.7751 9.40027 14.1195 9.24497C13.902 9.1932 13.7418 9.15933 13.1852 9.15358C12.4709 9.14655 11.8667 9.15613 11.5242 9.32038C11.2963 9.42967 11.1205 9.67381 11.228 9.68787C11.3601 9.70513 11.6597 9.76712 11.8185 9.9793C12.0236 10.2535 12.0164 10.8683 12.0164 10.8683C12.0164 10.8683 12.1343 12.5632 11.741 12.7735C11.4715 12.9179 11.1017 12.6233 10.3067 11.2754C9.89975 10.5852 9.59244 9.82208 9.59244 9.82208C9.59244 9.82208 9.53319 9.67956 9.42706 9.60287C9.2988 9.5102 9.11975 9.48144 9.11975 9.48144L7.21791 9.49358C7.21791 9.49358 6.93208 9.50125 6.82726 9.62332C6.73415 9.73133 6.8201 9.95566 6.8201 9.95566C6.8201 9.95566 8.30914 13.3755 9.99546 15.0992C11.5418 16.6791 13.2971 16.5755 13.2971 16.5755H14.0928Z"
+                fill="white" />
+        </symbol>
+        <symbol id="ok" viewBox="0 0 26 25">
+            <path
+                d="M0.919922 12.48C0.919922 5.58749 6.50741 0 13.3999 0C20.2924 0 25.8799 5.58749 25.8799 12.48C25.8799 19.3725 20.2924 24.96 13.3999 24.96C6.50741 24.96 0.919922 19.3725 0.919922 12.48Z"
+                fill="#F68634" />
+            <path
+                d="M14.7498 15.3089L16.6149 17.1094C16.9969 17.4775 16.9969 18.0752 16.6149 18.4436C16.2332 18.8121 15.6145 18.8121 15.2333 18.4436L13.3995 16.6743L11.5674 18.4436C11.3764 18.6277 11.126 18.7198 10.8757 18.7198C10.6258 18.7198 10.3759 18.6277 10.1848 18.4436C9.80315 18.0752 9.80315 17.4779 10.1844 17.1094L12.0497 15.3089C11.3706 15.1596 10.7156 14.8998 10.1124 14.5345C9.65583 14.2566 9.51869 13.6745 9.80635 13.2334C10.0932 12.7918 10.6965 12.6588 11.1538 12.9367C12.5196 13.766 14.2791 13.7662 15.6457 12.9367C16.103 12.6588 16.7061 12.7918 16.9935 13.2334C17.2812 13.6741 17.1437 14.2566 16.6871 14.5345C16.0839 14.9002 15.4289 15.1596 14.7498 15.3089Z"
+                fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.0552 9.46065C10.0552 11.2361 11.5515 12.6804 13.3915 12.6804C15.2318 12.6804 16.7277 11.2361 16.7277 9.46065C16.7277 7.68461 15.2318 6.23999 13.3915 6.23999C11.5515 6.23999 10.0552 7.68461 10.0552 9.46065ZM14.7728 9.46065C14.7728 8.72534 14.1532 8.12741 13.3915 8.12741C12.6303 8.12741 12.0101 8.72534 12.0101 9.46065C12.0101 10.1954 12.6303 10.7937 13.3915 10.7937C14.1532 10.7937 14.7728 10.1954 14.7728 9.46065Z"
+                fill="white" />
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 26 25">
+            <path
+                d="M0.879883 12.48C0.879883 5.58749 6.46737 0 13.3599 0C20.2524 0 25.8399 5.58749 25.8399 12.48C25.8399 19.3725 20.2524 24.96 13.3599 24.96C6.46737 24.96 0.879883 19.3725 0.879883 12.48Z"
+                fill="#3B5998" />
+            <path
+                d="M14.6607 19.818V13.0282H16.535L16.7833 10.6884H14.6607L14.6639 9.51729C14.6639 8.90704 14.7219 8.58005 15.5984 8.58005H16.7701V6.23999H14.8955C12.6439 6.23999 11.8514 7.37504 11.8514 9.28384V10.6886H10.4479V13.0284H11.8514V19.818H14.6607Z"
+                fill="white" />
+        </symbol>
+        <symbol id="gmail" viewBox="0 0 26 25">
+            <path
+                d="M0.839844 12.48C0.839844 5.58749 6.42733 0 13.3198 0C20.2124 0 25.7998 5.58749 25.7998 12.48C25.7998 19.3725 20.2124 24.96 13.3198 24.96C6.42733 24.96 0.839844 19.3725 0.839844 12.48Z"
+                fill="white" />
+            <path
+                d="M13.3199 9.16312C14.3354 9.16312 15.0204 9.60176 15.411 9.96831L16.9373 8.4781C15.9999 7.60681 14.7801 7.07202 13.3199 7.07202C11.2048 7.07202 9.37809 8.28582 8.48877 10.0524L10.2374 11.4104C10.676 10.1065 11.8898 9.16312 13.3199 9.16312Z"
+                fill="#EA4335" />
+            <path
+                d="M18.5115 12.6001C18.5115 12.1555 18.4755 11.831 18.3973 11.4945H13.3198V13.5015H16.3002C16.2401 14.0002 15.9157 14.7513 15.1946 15.2561L16.9011 16.578C17.9226 15.6346 18.5115 14.2466 18.5115 12.6001Z"
+                fill="#4285F4" />
+            <path
+                d="M10.2433 13.5497C10.1291 13.2132 10.063 12.8526 10.063 12.4801C10.063 12.1075 10.1291 11.747 10.2373 11.4105L8.48872 10.0525C8.12218 10.7856 7.91187 11.6088 7.91187 12.4801C7.91187 13.3514 8.12218 14.1746 8.48872 14.9077L10.2433 13.5497Z"
+                fill="#FBBC05" />
+            <path
+                d="M13.3199 17.888C14.78 17.888 16.0059 17.4073 16.9012 16.578L15.1947 15.2561C14.738 15.5746 14.1251 15.7969 13.3199 15.7969C11.8898 15.7969 10.676 14.8535 10.2433 13.5496L8.49475 14.9076C9.38407 16.6742 11.2048 17.888 13.3199 17.888Z"
+                fill="#34A853" />
+        </symbol>
+        <symbol id="twitch" viewBox="0 0 26 26">
+            <path
+                d="M13.44 25.92C20.3325 25.92 25.92 20.3325 25.92 13.44C25.92 6.54745 20.3325 0.959961 13.44 0.959961C6.54745 0.959961 0.959961 6.54745 0.959961 13.44C0.959961 20.3325 6.54745 25.92 13.44 25.92Z"
+                fill="#F1F1F1" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.39551 9.38851L7.37219 6.78394H20.7175V15.9004L16.8109 19.8056H13.8816L11.9293 21.7599H9.97502V19.8056H6.39551V9.38851ZM19.4157 8.0854H8.67341V17.5273H11.6047V19.4789L13.5565 17.5273H17.1365L19.4157 15.248V8.0854Z"
+                fill="#6441A5" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M13.5565 14.5977H12.2544V10.6914H13.5565V14.5977ZM17.1366 14.5977H15.8347V10.6914H17.1366V14.5977Z"
+                fill="#6441A5" />
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 26 26">
+            <path
+                d="M0.919922 13.44C0.919922 6.54745 6.50741 0.959961 13.3999 0.959961C20.2924 0.959961 25.8799 6.54745 25.8799 13.44C25.8799 20.3325 20.2924 25.92 13.3999 25.92C6.50741 25.92 0.919922 20.3325 0.919922 13.44Z"
+                fill="#55ACEE" />
+            <path
+                d="M13.0261 11.1039L13.0523 11.5357L12.6159 11.4829C11.0271 11.2802 9.63909 10.5927 8.46061 9.43824L7.88446 8.8654L7.73606 9.28842C7.4218 10.2314 7.62258 11.2273 8.27729 11.8971C8.62647 12.2672 8.5479 12.3201 7.94557 12.0998C7.73606 12.0293 7.55274 11.9764 7.53528 12.0028C7.47417 12.0645 7.68368 12.8665 7.84954 13.1838C8.07651 13.6244 8.53917 14.0562 9.04548 14.3118L9.47323 14.5145L8.96692 14.5233C8.47807 14.5233 8.46061 14.5321 8.51298 14.7172C8.68757 15.2901 9.37721 15.8982 10.1454 16.1626L10.6866 16.3476L10.2152 16.6296C9.51688 17.035 8.6963 17.2642 7.87573 17.2818C7.4829 17.2906 7.15991 17.3259 7.15991 17.3523C7.15991 17.4404 8.22491 17.934 8.84471 18.1278C10.7041 18.7007 12.9127 18.4539 14.5713 17.4757C15.7497 16.7795 16.9282 15.3958 17.4782 14.0562C17.775 13.3424 18.0718 12.0381 18.0718 11.4124C18.0718 11.007 18.098 10.9541 18.5868 10.4694C18.8749 10.1873 19.1455 9.87889 19.1979 9.79076C19.2852 9.62332 19.2765 9.62332 18.8313 9.77314C18.0892 10.0375 17.9845 10.0023 18.3511 9.60569C18.6217 9.32368 18.9447 8.81252 18.9447 8.6627C18.9447 8.63626 18.8138 8.68033 18.6654 8.75965C18.5083 8.84777 18.1591 8.97997 17.8972 9.05929L17.4258 9.20911L16.9981 8.91828C16.7624 8.75965 16.4306 8.58339 16.2561 8.53051C15.8108 8.40713 15.1299 8.42475 14.7284 8.56576C13.6372 8.96234 12.9476 9.98465 13.0261 11.1039Z"
+                fill="white" />
+        </symbol>
+        <symbol id="apple" viewBox="0 0 26 26">
+            <path
+                d="M0.879883 13.44C0.879883 6.54745 6.46737 0.959961 13.3599 0.959961C20.2524 0.959961 25.8399 6.54745 25.8399 13.44C25.8399 20.3325 20.2524 25.92 13.3599 25.92C6.46737 25.92 0.879883 20.3325 0.879883 13.44Z"
+                fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.0987 5.9519C16.2293 6.83935 15.8681 7.70875 15.3916 8.32387C14.8818 8.98365 14.0031 9.49395 13.1517 9.46732C12.9963 8.61768 13.3942 7.74226 13.8784 7.15378C14.4096 6.5043 15.3199 6.00603 16.0987 5.9519ZM18.6563 18.4431C19.0952 17.7705 19.2591 17.4311 19.5999 16.6717C17.1217 15.7293 16.7246 12.2061 19.1772 10.8539C18.4291 9.91577 17.3779 9.37196 16.3856 9.37196C15.6706 9.37196 15.1807 9.55854 14.7354 9.72817C14.3642 9.86952 14.024 9.9991 13.6103 9.9991C13.1631 9.9991 12.7671 9.85712 12.3525 9.70846C11.8969 9.54511 11.4188 9.37368 10.8255 9.37368C9.71196 9.37368 8.52668 10.0541 7.7752 11.2173C6.71886 12.8556 6.89904 15.9354 8.61207 18.5591C9.22436 19.4981 10.0424 20.5531 11.1124 20.5625C11.5564 20.5669 11.8519 20.4344 12.1716 20.291C12.5375 20.1269 12.9353 19.9485 13.6239 19.9448C14.3166 19.9407 14.7081 20.1213 15.0692 20.2878C15.3807 20.4315 15.6696 20.5647 16.1098 20.56C17.1806 20.5514 18.044 19.3821 18.6563 18.4431Z"
+                fill="#0B0B0A" />
+        </symbol>
+    </svg>
+    <!-- Header-section -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <svg class="header__logo">
+                    <use xlink:href="#logo"></use>
+                </svg>
+                <nav class="nav">
+                    <a href="#" class="nav__item active">Главная</a>
+                    <a href="#" class="nav__item">Сервера</a>
+                    <a href="#" class="nav__item">Скачать</a>
+                    <a href="#" class="nav__item">Открыть в браузере</a>
+                    <a href="#" class="nav__item">Цены</a>
+                    <a href="#" class="nav__item">Тех поддержка</a>
+                    <a href="#" class="nav__item">Контакты</a>
+                </nav>
+                <div class="burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Slider-section -->
+    <section class="slider-section">
+        <div class="container slider-container">
+            <div class="slider">
+                <div class="slide" data-zs-interval="6000" data-zs-speed="10000" data-zs-bullets="false"
+                    data-zs-src='["../img/slide-1.jpg", "img/slide-2.jpg", "img/slide-3.jpg"]'>
+                    <div class="slide-content">
+                        <p class="slide-content__text">Сервис облачного гейминга</p>
+                        <h2 class="slide-content__title">Преврати свое устройство в игровое </h2>
+                        <div class="slide-content__btnWrap">
+                            <a class="slide-content__btn">UPGRADE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About-section -->
+    <div class="container line">
+        <section class="about-section">
+            <div class="about-items">
+                <div class="about-item">
+                    <img src="img/about-img.png" alt="server and user" class="about-item__img">
+                </div>
+                <div class="about-item">
+                    <div class="about-content">
+                        <p class="about-content__subtitle subtitle"><span class="subtile-line"></span>Облачный гейминг
+                        </p>
+                        <h2 class="about-content__title title">Как это работает</h2>
+                        <p class="about-content__text">Наши сервера запускают игру, и передают
+                            вам картинку, которой вы можете управлять
+                            в реальном времени!</p>
+                        <p class="about-content__text">Приложение запустится на ПК с процессором
+                            от 1.5 GHz , от 1 Gb RAM и доступом в интернет
+                            от 15 мбит/с
+                            на всех операционых системах
+                            Windows 7, 8, 10 MacOS и Linux .</p>
+                        <a href="#" class="about-content__btn btn-1">Загрузить</a>
+                    </div>
+                </div>
+            </div>
+            <!-- About-modal -->
+            <div class="download-modal">
+                <div class="download-modal__content">
+                    <div class="download-modal__header">
+                        <button class="download-modal__btn btn-back"><i class="fa-solid fa-angle-left"></i></button>
+                        <h4 class="download-modal__title">Выберете операционную систему</h4>
+                    </div>
+                    <div class="download-modal__items">
+                        <a href="#" class="download-modal__link"><i class="fa-brands fa-windows"></i></a>
+                        <a href="#" class="download-modal__link"><i class="fa-brands fa-apple"></i></a>
+                        <a href="#" class="download-modal__link"><i class="fa-brands fa-linux"></i></a>
+                        <a href="#" class="download-modal__link"><i class="fa-brands fa-chrome"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Start-section -->
+        <section class="start-section">
+            <div class="start-wrap">
+                <div class="start-header">
+                    <p class="start-header__subtitle subtitle">
+                        <span class="subtile-line"></span>Быстрый старт
+                    </p>
+                    <h2 class="start-header__title title">Начни играть</h2>
+                </div>
+                <div class="start-items">
+                    <div class="start-item">
+                        <figure class="start-item__icon">
+                            <img src="img/start-1.png" alt="">
+                        </figure>
+                        <h4 class="start-item__title">Cоздайте аккаунт</h4>
+                    </div>
+                    <div class="start-item">
+                        <figure class="start-item__icon">
+                            <img src="img/start-2.png" alt="">
+                        </figure>
+                        <h4 class="start-item__title">Cкачайте модуль</h4>
+                    </div>
+                    <div class="start-item">
+                        <figure class="start-item__icon">
+                            <img src="img/start-3.png" alt="">
+                        </figure>
+                        <h4 class="start-item__title">Выберите тариф</h4>
+                    </div>
+                    <div class="start-item">
+                        <figure class="start-item__icon">
+                            <img src="img/start-4.png" alt="">
+                        </figure>
+                        <h4 class="start-item__title">Начни играть</h4>
+                    </div>
+                </div>
+                <a href="#" class="start-btn btn-1">Начать</a>
+            </div>
+        </section>
+        <!-- Tariff-section -->
+        <section class="tariff-section">
+            <div class="tariff-wrap">
+                <div class="tariff-header">
+                    <p class="tariff-header__subtitle subtitle">
+                        <span class="subtile-line"></span>Гибкие тарифы
+                    </p>
+                    <h2 class="tariff-header__title title">Доступные подписки</h2>
+                </div>
+                <div class="tariff-cards">
+                    <!-- Tariff-card-1 -->
+                    <div class="tariff-card">
+                        <div class="tariff-card__content">
+                            <h3 class="tariff-card__title">Почасовая<br> оплата</h3>
+                            <span class="tariff-card__price">45 р. - час</span>
+                            <ul class="tariff-list">
+                                <li class="tariff-list__item">Доступно:</li>
+                                <li class="tariff-list__item">Каталог игр</li>
+                                <li class="tariff-list__item">Виртуальный ПК</li>
+                                <li class="tariff-list__item">Безлимитная игровая сессия</li>
+                            </ul>
+                            <button class="tariff-card__btn">Выбрать</button>
+                        </div>
+                    </div>
+                    <!-- Tariff-card-2 -->
+                    <div class="tariff-card max">
+                        <div class="tariff-card__content max">
+                            <h3 class="tariff-card__title">Подписка<br> Максимум</h3>
+                            <span class="tariff-card__price">2999 р. - месяц</span>
+                            <ul class="tariff-list max">
+                                <li class="tariff-list__item">Доступно:</li>
+                                <li class="tariff-list__item">Каталог игр</li>
+                                <li class="tariff-list__item">Виртуальный ПК</li>
+                                <li class="tariff-list__item">Игровая сессия 10 часов/день</li>
+                            </ul>
+                            <button class="tariff-card__btn max">Выбрать</button>
+                        </div>
+                    </div>
+                    <!-- Tariff-card-3 -->
+                    <div class="tariff-card">
+                        <div class="tariff-card__content">
+                            <h3 class="tariff-card__title">Подписка<br> Минимум</h3>
+                            <span class="tariff-card__price">1500 р. - месяц</span>
+                            <ul class="tariff-list">
+                                <li class="tariff-list__item">Доступно:</li>
+                                <li class="tariff-list__item">Каталог игр</li>
+                                <li class="tariff-list__item">Игровая сессия 4 часов/день</li>
+                            </ul>
+                            <button class="tariff-card__btn">Выбрать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Browser-section -->
+    <section class="browser">
+        <div class="container">
+            <div class="browser__inner">
+                <div class="browser-content">
+                    <p class="tariff-header__subtitle subtitle">
+                        <span class="subtile-line"></span>Играть можно в браузере
+                    </p>
+                    <h2 class="tariff-header__title title">Запускайте на любых устройствах</h2>
+                    <p class="browser-content__text">Наш модуль доступен на все популярные ОС
+                        и работает на всех компьютерах.</p>
+                    <a href="#" class="btn-1">Открыть в браузере</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location-section -->
+    <section class="location">
+        <div class="container">
+            <div class="location-wrap">
+                <div class="location-header">
+                    <p class="location-header__subtitle subtitle">
+                        <span class="subtile-line"></span>Игровые сервера на карте
+                    </p>
+                    <h2 class="location-header__title title">Карта локаций</h2>
+                </div>
+                <figure class="location-img"><img src="img/location.png" alt=""></figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-box"><svg class="footer__logo">
+                        <use xlink:href="#logo"></use>
+                    </svg>
+                    <div class="copyright">
+                        <span class="copyright__year"></span>
+                        <p class="copyright__text">&nbsp;All rights reserved.</p>
+                        <p class="copyright__author">Design by desart<i class="fa-solid fa-caret-left"></i></p>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <a href="#" class="footer__link">Политика конфиденциальности</a>
+                    <a href="#" class="footer__link">Файлы Cookie</a>
+                    <ul class="footer-social">
+                        <li class="footer-social__item">
+                            <a href="https://www.nvidia.com/ru-ru/geforce-now/" target="_blank"
+                                class="footer-social__link">
+                                <i class="fa-brands fa-vk"></i>
+                            </a>
+                        </li>
+                        <li class="footer-social__item">
+                            <a href="#" class="footer-social__link">
+                                <i class="fa-brands fa-discord"></i>
+                            </a>
+                        </li>
+                        <li class="footer-social__item">
+                            <a href="#" class="footer-social__link">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- User-modal -->
+    <section class="user-modal">
+        <div class="user-wrap">
+            <div class="user-box">
+                <div class="user-nav">
+                    <a href="#" class="user-nav__btn user-closed"><i class="fa-solid fa-angle-left"></i></a>
+                    <a href="#" class="user-nav__btn active">Регистрация</a>
+                    <a href="#" class="user-nav__btn">Вход</a>
+                </div>
+                <form action="" class="user-form user-registration">
+                        <input type="text" placeholder="Почта / Телефон" class="user-form__input">
+                        <input type="password" placeholder="Пароль" class="user-form__input">
+                    <button class="user-form__btn">Зарегистрироваться</button>
+                    <div class="user-form__footer">
+                        <label class="checkbox-inner">
+                            <input type="checkbox" name="" id="" class="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p class="user-form__text">Я соглашаюсь со следующими установленными правилами: Политика
+                            использования файлов cookie WARPLAY.CLOUD, Пользовательское соглашение WARPLAY.CLOUD,
+                            Лицензионное соглашение MY.GAMES с конечным пользователем в отношении Игр, Лицензионное
+                            соглашение с конечным Пользователем для WARPLAY.CLOUD Игрового центра, Политика
+                            конфиденциальности портала WARPLAY.CLOUD, Политика конфиденциальности WARPLAY.CLOUD для
+                            детей</p>
+                    </div>
+                </form>
+                <form action="" class="user-form user-input">
+                    <input type="text" placeholder="Почта / Телефон" class="user-form__input">
+                    <input type="password" placeholder="Пароль" class="user-form__input">
+                    <div class="user-form__footer">
+                        <label class="checkbox-inner">
+                            <input type="checkbox" name="" id="checkbox-title" class="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label for="checkbox-title" class="checkbox-title">Запомнить</label>
+                    <button class="user-form__btn">Войти</button>
+                    </div>
+            </form>
+                <div class="user-social">
+                    <div class="user-social__header">
+                        <span class="user-social__line"></span>
+                        <h3 class="user-social__title">Войти через</h3>
+                        <span class="user-social__line"></span>
+                    </div>
+                    <div class="user-social__items">
+                        <a href="#" class="user-social__link">
+                            <svg class="user-social__icon">
+                                <use xlink:href="#mailRu"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="user-social__link">
+                            <svg class="user-social__icon">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="user-social__link">
+                            <svg class="user-social__icon">
+                                <use xlink:href="#ok"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="user-social__link">
+                            <svg class="user-social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="user-social__link">
+                            <svg class="user-social__icon">
+                                <use xlink:href="#gmail"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="user-social__link">
+                            <svg class="user-social__icon">
+                                <use xlink:href="#twitch"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="user-social__link">
+                            <svg class="user-social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="user-social__link">
+                            <svg class="user-social__icon">
+                                <use xlink:href="#apple"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Script-js -->
+    <script src="js/script.js"></script>
+    <!-- Slider -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery.zoomslider.min.js"></script>
+</body>
+
+</html>
