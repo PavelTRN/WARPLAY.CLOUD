@@ -46,6 +46,11 @@
 
 // // user form 
 // let formBtn = document.querySelector(".user-form__btn");
+// Burger btn
+document.querySelector('.burger-btn').addEventListener('click', () => {
+    document.querySelector('.nav').classList.toggle('active');
+    document.querySelector('.burger-btn').classList.toggle('active');
+  });
 
 //Date
 let date = new Date().getFullYear();
